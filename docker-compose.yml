@@ -1,0 +1,23 @@
+version: "3.9"
+services:
+  mongodb:
+    image: mongo:7.0.9
+    container_name: my-mongo
+    ports:
+      - 27017:27017
+    volumes:
+      - ./data:/data/db
+
+  flask-service:
+    build:
+      context: ./
+    image: my-server:1.0.1
+    container_name: my-server-container
+    depends_on:
+      - mongodb
+    ports:
+      - 5000:5000
+    environment:
+      - "SERVER_HOST=0.0.0.0"
+      - "MONGO_HOST=mongodb"
+      - "MONGO_DATABASE=HospitalDB"

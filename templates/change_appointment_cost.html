@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Change Appointment Cost</title>
+    </head>
+<body>  
+    <h2>Change Appointment Cost</h2>
+    <form method="post" action="{{ url_for('change_appointment_cost') }}">
+        <p><label for="new_appointment_cost">New Appointment Cost:</label> <input type="text" name="new_appointment_cost" id="new_appointment_cost" placeholder="New Appointment Cost" required></p>
+        <p><input type="submit" value="Change Appointment Cost"></p>
+    </form>
+
+    <p><a href="{{ url_for('doctor_home') }}">Back to Home</a></p>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <ul>
+          {% for category, message in messages %}
+            <li class="{{ category }}">{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+
+</body>
+</html>
