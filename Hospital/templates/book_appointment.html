@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+</head>
+<body>
+    <h2>Book an Appointment</h2>
+    <form method="post" action="{{ url_for('book_appointment') }}">
+        <p>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+        </p>
+        <p>
+            <label for="time">Time:</label>
+            <select id="time" name="time" required>
+                <option value="" disabled selected>Select Time</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+            </select>
+        </p>
+        <p>
+            <label for="specialty">Specialty:</label>
+            <select id="specialty" name="specialty" required>
+                <option value="" disabled selected>Select Specialty</option>
+                <option value="Radiologist">Radiologist</option>
+                <option value="Hematologist">Hematologist</option>
+                <option value="Allergist">Allergist</option>
+                <option value="Pathologist">Pathologist</option>
+                <option value="Cardiologist">Cardiologist</option>
+            </select>
+        </p>
+        <p>
+            <label for="reason">Reason for Booking:</label><br>
+            <textarea id="reason" name="reason" rows="4" cols="50" required></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Book Appointment">
+        </p>
+    </form>
+    <form method="get" action="{{ url_for('patient_home') }}">
+        <button type="submit">Back to Home</button>
+    </form>
+
+    {% if error %}
+    <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    {% if success %}
+    <p style="color: green;">{{ success }}</p>
+    {% endif %}
+</body>
+</html>

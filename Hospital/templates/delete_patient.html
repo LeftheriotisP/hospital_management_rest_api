@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Patient</title>
+</head>
+<body>
+    <h2>Delete Patient</h2>
+    <h3>To delete a Patient's account please input the Patient's username</h3>
+    <form method="post" action="{{ url_for('delete_patient') }}">
+        <p><label for="patient_username">Patient Username:</label> <input type="text" name="patient_username" id="patient_username_delete" placeholder="Patient Username" required></p>
+        <p><input type="submit" value="Delete Patient"></p>
+    </form>
+    <p><a href="{{ url_for('admin_home') }}">Back to Home</a></p>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <ul>
+        {% for category, message in messages %}
+          <li class="{{ category }}">{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+
+  <h3>Patient List</h3>
+  <ul>
+      {% for patient in patients %}
+          <li>{{ patient.name }} {{ patient.surname }} - Username: {{ patient.username }}</li>
+      {% endfor %}
+  </ul>
+</body>
+</html>

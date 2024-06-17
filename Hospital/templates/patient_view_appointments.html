@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Appointments</title>
+</head>
+<body>
+    {% if appointments %}
+    <h2>Upcoming Appointments</h2>
+    <ul>
+        {% for appointment in appointments %}
+            <li>
+                {{ appointment.date }} at {{ appointment.time }} with Dr. {{ appointment.doctor_name }} {{ appointment.doctor_surname }}
+                <form action="{{ url_for('view_appointment_details', appointment_id=appointment['_id']) }}" method="get">
+                    <button type="submit">View Details</button>
+                </form>                
+            </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+        <p>No upcoming appointments</p>
+    {% endif %}
+    <form action="{{ url_for('patient_home') }}">
+        <button type="submit">Go Back Home</button>
+    </form>
+</body>
+</html>
