@@ -3,7 +3,7 @@
 Παναγιώτης Λευθεριώτης Ε19084
 
 ## Επικοινωνία
-- [p.leftheriotis@gmail.com](mailto:p.leftheriotis@gmail.com)
+[p.leftheriotis@gmail.com](mailto:p.leftheriotis@gmail.com)
 
 ## Περιεχόμενα
 - [Επιπλέον Παραδοχές](#επιπλέον-παραδοχές)
