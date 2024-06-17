@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Details</title>
+</head>
+<body>
+    <h2>Appointment Details</h2>
+    <p><strong>Date:</strong> {{ appointment.date }}</p>
+    <p><strong>Time:</strong> {{ appointment.time }}</p>
+    <p><strong>Doctor:</strong> Dr. {{ appointment.doctor_name }} {{ appointment.doctor_surname }}</p>
+    <p><strong>Specialty:</strong> {{ appointment.doctor_specialty }}</p>
+    <p><strong>Cost:</strong> {{ appointment.appointment_cost }}</p>
+    <p><strong>Reason:</strong> {{ appointment.reason }}</p>
+    <form action="{{ url_for('delete_appointment', appointment_id=appointment._id) }}" method="post">
+        <button type="submit">Cancel Appointment</button>
+    </form>
+    <form action="{{ url_for('view_appointments') }}">
+        <button type="submit">View all future Appointments</button>
+    </form>
+    <form action="{{ url_for('patient_home') }}">
+        <button type="submit">Back to Home</button>
+    </form>
+</body>
+</html>
