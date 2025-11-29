@@ -1,29 +1,22 @@
 # Hospital Appointment Management REST API
-## Author 
-Panagiotis Leftheriotis
+## Δημιουργός 
+Παναγιώτης Λευθεριώτης
 
-## Contact
+## Επικοινωνία
 [p.leftheriotis@gmail.com](mailto:p.leftheriotis@gmail.com)
 
-## Contents
-- [Application Requirements](#application-requirements)
-- [Modern Web Application Trends](#modern-web-application-trends)
-- [Application Technologies](#application-technologies)
-- [User Manual](#user-manual)
+## Περιεχόμενα
+- [Επιπλέον Παραδοχές](#επιπλέον-παραδοχές)
+- [Τεχνολογίες που χρησιμοποιήθηκαν](#τεχνολογίες-που-χρησιμοποιήθηκαν)
+- [Περιγραφή των αρχείων](#περιγραφή-των-αρχείων)
+- [Τρόπος Εκτέλεσης](#τρόπος-εκτέλεσης)
+- [Τρόπος Χρήσης](#τρόπος-χρήσης)
+- [Αναφορές](#αναφορές)
 
-## Application Requirements
-- Promotion of the company and its services: The main objective of the application is to increase the visibility of the company, its services, the countries it connects, the number of flights and the ticket prices it offers to a wider audience
-- Online ticket purchase: Through the electronic application, users will be able to choose their flights and buy their tickets easily with just a few "clicks"
-- Attracting customers due to competitive prices: The application will offer the possibility of a discount through a simple game that customers can easily win
-- Reduction of staff: Online customer service will lead to a reduction in the staff involved in issuing tickets, providing information, etc.
-- Ticket history: Full information to the customer about current and previous transactions
-- Attract partners: Easy access to itineraries will make it easier for partners such as tourist offices and travel agents to choose the specific company
-- Statistics: Storing tickets in the company's database will help in decision-making with the statistical study of customer preferences
-## Modern Web Application Trends
+## Επιπλέον Παραδοχές
+- Όλες οι φόρμες όπου ο χρήστης καλείται να βάλει στοιχεία, έχουν τους απαραίτητους ελέγχους για την εγκυρότητα των στοιχείων.
 
-## Application Technologies
-
-## User Manual
+## Τεχνολογίες που χρησιμοποιήθηκαν
 - Flask: Tο framework που χρησιμοποιήθηκε για την δημιουργία του REST API Server.
 
 - Python: H γλώσσα προγραμματισμού που χρησιμοποιήθηκε για την δημιουργία του Server.
@@ -166,12 +159,3 @@ MongoDB βάση δεδομένων.
 ## Αναφορές
 
 Κατά την ανάπτυξη της εφαρμογής χρησιμοποιήθηκαν οι διαφάνειες και τα παραδείγματα από το εργαστήριο του μαθήματος "Πληροφοριακά Συστήματα".
-
-
-
-
-
-
-
-
-
