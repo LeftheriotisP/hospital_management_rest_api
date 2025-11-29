@@ -1,17 +1,15 @@
 # Hospital Appointment Management REST API
-## Δημιουργός 
-Παναγιώτης Λευθεριώτης
+## Author 
+Panagiotis Leftheriotis
 
-## Επικοινωνία
+## Contact
 [p.leftheriotis@gmail.com](mailto:p.leftheriotis@gmail.com)
 
-## Περιεχόμενα
-- [Επιπλέον Παραδοχές](#επιπλέον-παραδοχές)
-- [Τεχνολογίες που χρησιμοποιήθηκαν](#τεχνολογίες-που-χρησιμοποιήθηκαν)
-- [Περιγραφή των αρχείων](#περιγραφή-των-αρχείων)
-- [Τρόπος Εκτέλεσης](#τρόπος-εκτέλεσης)
-- [Τρόπος Χρήσης](#τρόπος-χρήσης)
-- [Αναφορές](#αναφορές)
+## Contents
+- [Application Requirements](#application-requirements)
+- [Modern Web Application Trends](#modern-web-application-trends)
+- [Application Technologies](#application-technologies)
+- [User Manual](#user-manual)
 
 ## Επιπλέον Παραδοχές
 - Όλες οι φόρμες όπου ο χρήστης καλείται να βάλει στοιχεία, έχουν τους απαραίτητους ελέγχους για την εγκυρότητα των στοιχείων.
@@ -159,6 +157,7 @@ MongoDB βάση δεδομένων.
 ## Αναφορές
 
 Κατά την ανάπτυξη της εφαρμογής χρησιμοποιήθηκαν οι διαφάνειες και τα παραδείγματα από το εργαστήριο του μαθήματος "Πληροφοριακά Συστήματα".
+
 
 
 
