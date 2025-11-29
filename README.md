@@ -12,7 +12,12 @@ Panagiotis Leftheriotis
 - [User Manual](#user-manual)
 
 ## Application Requirements
-## Τεχνολογίες που χρησιμοποιήθηκαν
+
+## Modern Web Application Trends
+
+## Application Technologies
+
+## User Manual
 - Flask: Tο framework που χρησιμοποιήθηκε για την δημιουργία του REST API Server.
 
 - Python: H γλώσσα προγραμματισμού που χρησιμοποιήθηκε για την δημιουργία του Server.
@@ -155,6 +160,7 @@ MongoDB βάση δεδομένων.
 ## Αναφορές
 
 Κατά την ανάπτυξη της εφαρμογής χρησιμοποιήθηκαν οι διαφάνειες και τα παραδείγματα από το εργαστήριο του μαθήματος "Πληροφοριακά Συστήματα".
+
 
 
 
